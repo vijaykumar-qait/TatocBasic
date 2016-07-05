@@ -17,7 +17,7 @@ public class TatocBasic {
     public static void main(String[] args) throws InterruptedException {
 //------------------------------------------------------------------------------
        //create a new instance of fireFox
-       File binaryPath= new File("/home/vijaykumar/Downloads/firefox/firefox");
+       File binaryPath= new File("path-to-your-firefox-binary");
        FirefoxBinary ffBinary= new FirefoxBinary(binaryPath);
        FirefoxProfile ffProfile= new FirefoxProfile();
        
@@ -100,7 +100,8 @@ public class TatocBasic {
         
 //------------------------------------------------------------------------------
         //closing firefox
-        //webdriver.quit();
+	Thread.sleep(3000);
+        webdriver.quit();
     }
     
 }
